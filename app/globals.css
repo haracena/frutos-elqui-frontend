@@ -30,3 +30,18 @@ body {
 .bg-brand {
   background-color: var(--brand-purple);
 }
+
+@keyframes sun-drop {
+  from {
+    transform: translateY(-500px) scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-sun-drop {
+  animation: sun-drop 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}

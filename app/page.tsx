@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import OrnamentalDivider from "@/components/OrnamentalDivider";
 import Image from "next/image";
 
@@ -74,37 +75,7 @@ export default function Home() {
       </header>
 
       <main>
-        {/* Hero Section */}
-        <section
-          id="inicio"
-          className="relative flex min-h-[85vh] items-center justify-center overflow-hidden px-6 py-20 text-center"
-        >
-          <img
-            src="/assets/images/bg-hero.webp"
-            alt="Valle de Elqui"
-            className="absolute inset-0 -z-10 object-cover brightness-[0.85] w-full h-full"
-          />
-          <div className="container mx-auto relative left-16 flex flex-col items-center gap-8">
-            <div className="max-w-4xl space-y-6">
-              <h1 className="font-serif text-5xl md:text-8xl font-normal leading-none tracking-tight text-brand-cream drop-shadow-lg drop-shadow-brand-purple">
-                Sabores del <br />{" "}
-                <span className="relative left-24">Valle de Elqui</span>
-              </h1>
-              <div className="relative left-28 mx-auto max-w-2xl flex flex-col items-center gap-8">
-                <p className="text-pretty text-xl tracking-widest text-white/95 leading-relaxed font-medium drop-shadow-lg drop-shadow-brand-purple">
-                  Más de 25 años elaborando mermeladas, manjares y conservas
-                  artesanales 100% naturales.
-                </p>
-                <a
-                  href="#productos"
-                  className="inline-flex h-12 items-center justify-center rounded-full bg-brand-purple px-10 text-sm font-bold uppercase tracking-widest text-white shadow-2xl transition-all hover:scale-105 hover:bg-brand-purple/90 focus:outline-none focus:ring-2 focus:ring-brand-purple focus:ring-offset-2"
-                >
-                  Ver Productos
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero />
 
         <section
           id="nosotros"
