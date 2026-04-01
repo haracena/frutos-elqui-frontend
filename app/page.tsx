@@ -1,22 +1,20 @@
+import OrnamentalDivider from "@/components/OrnamentalDivider";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col selection:bg-brand-purple/10 font-body">
       {/* Header & Navigation */}
-      <header className="sticky top-0 z-50 w-full bg-brand-cream/80 backdrop-blur-md border-b border-brand-purple/10">
+      <header className="sticky top-0 z-50 w-full bg-brand-cream/80 backdrop-blur-sm border-b border-brand-purple/10">
         <nav
           className="container mx-auto flex items-center justify-between px-6 py-4"
           aria-label="Navegación principal"
         >
           <div className="flex items-center gap-3">
-            <Image
+            <img
               src="/assets/images/logo.webp"
               alt="Frutos de Elqui Logo"
-              width={180}
-              height={50}
               className="h-12 w-auto object-contain"
-              priority
             />
           </div>
           <ul className="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-[0.2em] text-foreground/80">
@@ -79,48 +77,48 @@ export default function Home() {
         {/* Hero Section */}
         <section
           id="inicio"
-          className="relative flex min-h-[90vh] items-center justify-center overflow-hidden px-6 py-20 text-center"
+          className="relative flex min-h-[85vh] items-center justify-center overflow-hidden px-6 py-20 text-center"
         >
-          <Image
+          <img
             src="/assets/images/bg-hero.webp"
             alt="Valle de Elqui"
-            fill
-            className="absolute inset-0 -z-10 object-cover brightness-[0.8]"
-            priority
+            className="absolute inset-0 -z-10 object-cover brightness-[0.85] w-full h-full"
           />
-          <div className="container mx-auto flex flex-col items-center gap-8">
+          <div className="container mx-auto relative left-16 flex flex-col items-center gap-8">
             <div className="max-w-4xl space-y-6">
-              <h1 className="font-serif text-5xl md:text-8xl font-normal leading-tight tracking-tight text-white drop-shadow-2xl">
-                Sabores del{" "}
-                <span className="text-brand-cream italic">Valle de Elqui</span>
+              <h1 className="font-serif text-5xl md:text-8xl font-normal leading-none tracking-tight text-brand-cream drop-shadow-lg drop-shadow-brand-purple">
+                Sabores del <br />{" "}
+                <span className="relative left-24">Valle de Elqui</span>
               </h1>
-              <p className="mx-auto max-w-2xl text-lg md:text-xl text-white/95 leading-relaxed uppercase tracking-[0.2em] font-medium drop-shadow-md">
-                Más de 25 años elaborando mermeladas, manjares y conservas
-                artesanales 100% naturales.
-              </p>
+              <div className="relative left-28 mx-auto max-w-2xl flex flex-col items-center gap-8">
+                <p className="text-pretty text-xl tracking-widest text-white/95 leading-relaxed font-medium drop-shadow-lg drop-shadow-brand-purple">
+                  Más de 25 años elaborando mermeladas, manjares y conservas
+                  artesanales 100% naturales.
+                </p>
+                <a
+                  href="#productos"
+                  className="inline-flex h-12 items-center justify-center rounded-full bg-brand-purple px-10 text-sm font-bold uppercase tracking-widest text-white shadow-2xl transition-all hover:scale-105 hover:bg-brand-purple/90 focus:outline-none focus:ring-2 focus:ring-brand-purple focus:ring-offset-2"
+                >
+                  Ver Productos
+                </a>
+              </div>
             </div>
-            <a
-              href="#productos"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-brand-purple px-10 text-sm font-bold uppercase tracking-widest text-white shadow-2xl transition-all hover:scale-105 hover:bg-brand-purple/90 focus:outline-none focus:ring-2 focus:ring-brand-purple focus:ring-offset-2"
-            >
-              Ver Productos
-            </a>
           </div>
         </section>
 
         <section
           id="nosotros"
-          className="relative py-24 px-6 overflow-hidden -mt-10"
+          className="relative py-32 px-6 overflow-hidden -mt-10"
         >
           <img
             src="/assets/images/bg-cream.webp"
             alt="Textura crema"
             className="absolute h-full w-full inset-0 -z-10 object-cover opacity-100 object-top"
           />
-          <div className="container mx-auto grid md:grid-cols-2 gap-20 items-center">
-            <div className="space-y-10">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-8 text-center">
               <header className="space-y-4">
-                <div className="flex flex-col items-start gap-2">
+                {/* <div className="flex flex-col items-start gap-2">
                   <img
                     src="/assets/images/title-decor.webp"
                     alt=""
@@ -129,50 +127,54 @@ export default function Home() {
                   <span className="text-brand-purple font-serif italic text-2xl">
                     Nuestra Esencia
                   </span>
-                </div>
-                <h2 className="font-serif text-3xl md:text-6xl font-normal tracking-tight text-brand-wine">
+                </div> */}
+                <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-brand-wine text-pretty">
                   Tradición Familiar y Sabor Artesanal
                 </h2>
+                <OrnamentalDivider color="bg-brand-wine" />
               </header>
-              <div className="space-y-6 text-lg text-foreground/80 leading-relaxed max-w-xl">
+              <div className="space-y-6 text-lg text-foreground/80 leading-relaxed max-w-xl text-pretty">
                 <p>
                   Desde 1995, nuestra familia elabora con dedicación y cariño
                   una variedad de productos artesanales, utilizando recetas
                   tradicionales y frutas seleccionadas del fértil Valle de
                   Elqui.
                 </p>
-                <p>
+                {/* <p>
                   Cada frasco contiene el alma de nuestra tierra y el secreto de
                   generaciones que han perfeccionado el arte de capturar la
                   dulzura del sol elquino.
-                </p>
+                </p> */}
               </div>
-              <a
+              {/* <a
                 href="#historia"
                 className="inline-flex h-12 items-center justify-center rounded-full bg-brand-wine px-10 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-brand-wine/90 shadow-lg shadow-brand-wine/20"
               >
                 Nuestra Historia
-              </a>
+              </a> */}
             </div>
 
             <img
               src="/assets/images/family.webp"
               alt="Proceso artesanal y familia"
-              className="object-cover group-hover:scale-105"
+              className="object-cover group-hover:scale-105 md:translate-x-0 -translate-x-[3%]"
             />
           </div>
         </section>
 
         {/* Products Section */}
-        <section id="productos" className="relative py-32 px-6 -mt-10">
+        <section
+          id="productos"
+          className="relative py-32 px-6 -mt-24 lg:-mt-16"
+        >
           <img
             src="/assets/images/bg-cream.webp"
             alt="Fondo rústico"
             className="absolute inset-0 h-full w-full -z-10 object-cover opacity-100 saturate-0 object-top"
           />
-          <div className="container mx-auto space-y-20">
+          <div className="container mx-auto space-y-8 sm:space-y-20">
             <header className="text-center space-y-6">
-              <div className="flex justify-center items-center gap-6">
+              <div className="flex justify-center items-center gap-2 lg:gap-4 overflow-hidden">
                 <img
                   src="/assets/images/title-decor.webp"
                   alt=""
@@ -238,28 +240,25 @@ export default function Home() {
         <img
           src="/assets/images/bg-purple-lg.webp"
           alt=""
-          className="absolute w-full h-full object-cover opacity-30"
+          className="absolute w-full h-full inset-0 object-cover opacity-30"
         />
-        <div className="container p-4 py-16 relative mx-auto grid md:grid-cols-4 gap-16 border-b border-brand-cream/10 pb-20">
-          <div className="space-y-10">
-            <Image
-              src="/assets/images/logo.webp"
+        <div className="max-w-7xl mx-auto p-4 py-16 relative grid sm:grid-cols-2 lg:grid-cols-4 gap-16 border-b border-brand-cream/10 pb-20 justify-items-center">
+          <div className="space-y-2">
+            <img
+              src="/assets/images/logo-cream.webp"
               alt="Frutos de Elqui"
-              width={200}
-              height={60}
-              className="h-20 w-auto brightness-200 grayscale opacity-90"
+              className="sm:w-full w-[80%] max-w-[280px] mx-auto opacity-100"
             />
-            <p className="text-base italic opacity-80 leading-relaxed max-w-xs">
-              &quot;Sabores auténticos del Valle de Elqui, rescatando la
-              tradición elquina en cada preparación.&quot;
+            <p className="text-base text-center mx-auto italic opacity-80 leading-relaxed max-w-xs">
+              Sabores auténticos del Valle de Elqui
             </p>
           </div>
 
-          <div className="space-y-10">
-            <h4 className="font-serif text-2xl font-normal tracking-wide">
+          <div className="space-y-6">
+            <h4 className="font-serif sm:text-start text-center text-2xl font-normal tracking-wide">
               Contáctanos
             </h4>
-            <ul className="space-y-8 text-sm font-medium">
+            <ul className="space-y-4 text-sm font-medium">
               <li className="flex items-center gap-5 group">
                 <div className="w-12 h-12 rounded-full bg-brand-cream/10 flex items-center justify-center transition-colors group-hover:bg-brand-cream/20">
                   <svg
@@ -294,18 +293,18 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <span className="text-lg tracking-wider uppercase">
+                <span className="text-lg tracking-wider">
                   contacto@frutosdeelqui.cl
                 </span>
               </li>
             </ul>
           </div>
 
-          <div className="space-y-10">
+          <div className="space-y-6">
             <h4 className="font-serif text-2xl font-normal tracking-wide">
               Secciones
             </h4>
-            <ul className="grid grid-cols-1 gap-6 text-xs font-bold uppercase tracking-[0.3em] opacity-80">
+            <ul className="grid pl-1 grid-cols-2 lg:grid-cols-1 gap-6 text-xs font-bold uppercase tracking-[0.3em] opacity-80">
               <li>
                 <a
                   href="#inicio"
@@ -341,7 +340,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="space-y-10">
+          <div className="space-y-6">
             <h4 className="font-serif text-2xl font-normal tracking-wide">
               Medios de Pago
             </h4>
@@ -359,7 +358,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container mx-auto mt-20 text-center text-[10px] font-bold uppercase tracking-[0.5em] opacity-30 pb-4">
+        <div className="container mx-auto py-8 text-center text-[10px] font-bold uppercase tracking-[0.5em]">
           <p>
             © 2026 Sabores del Valle de Elqui. Tradición elquina embotellada.
           </p>
