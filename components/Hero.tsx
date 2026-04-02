@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative flex min-h-[85vh] items-center justify-center overflow-hidden px-6 py-20 text-center"
+      className="relative flex min-h-[70vh] lg:min-h-[85vh] items-center justify-center overflow-hidden px-6 py-20 text-center"
     >
       {/* Background Main */}
       <img
@@ -33,7 +33,7 @@ const Hero = () => {
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 -z-25"
         style={{
-          transform: `translateY(${scrollY * 0.1}px)`,
+          transform: `translateY(${scrollY * -0.85}px)`,
         }}
       >
         {/* El Sol (Maneja la animación de entrada "Sun Drop") */}
@@ -54,40 +54,64 @@ const Hero = () => {
       {/* Parallax Elements */}
       <div className="absolute inset-0 -z-20 pointer-events-none overflow-hidden">
         {/* Left Image */}
-        <img
-          src="/assets/images/hero-parallax-left.webp"
-          alt=""
-          className="absolute left-[-5%] bottom-[-10%] w-[45%] object-contain transition-opacity duration-300"
+        <div
+          className="absolute left-[-25%] z-10 lg:left-[-5%] bottom-[-4%] lg:bottom-[-10%] w-[85%] lg:w-[45%]"
           style={{
-            transform: `translateY(${scrollY * -0.06}px)`,
-            opacity: Math.max(0, 1 - scrollY / 600),
+            transform: `translateY(${scrollY * -0.055}px)`,
           }}
-        />
+        >
+          <div className="animate-parallax-left">
+            <img
+              src="/assets/images/hero-parallax-left.webp"
+              alt=""
+              className="w-full object-contain transition-opacity duration-300"
+              // style={{
+              //   opacity: Math.max(0, 1 - scrollY / 600),
+              // }}
+            />
+          </div>
+        </div>
+
         {/* Right Image */}
-        <img
-          src="/assets/images/hero-parallax-right.webp"
-          alt=""
-          className="absolute right-[-10%] bottom-[-15%] w-[45%] object-contain transition-opacity duration-300"
+        <div
+          className="absolute right-[-40%] lg:right-[-10%] bottom-[-7%] lg:bottom-[-15%] w-[85%] lg:w-[45%]"
           style={{
-            transform: `translateY(${scrollY * -0.06}px)`,
-            opacity: Math.max(0, 1 - scrollY / 600),
+            transform: `translateY(${scrollY * -0.055}px)`,
           }}
-        />
+        >
+          <div className="animate-parallax-right">
+            <img
+              src="/assets/images/hero-parallax-right.webp"
+              alt=""
+              className="w-full object-contain transition-opacity duration-300"
+              // style={{
+              //   opacity: Math.max(0, 1 - scrollY / 600),
+              // }}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="container mx-auto relative z-10 flex flex-col items-center gap-8">
         <div className="max-w-4xl space-y-6">
-          <h1 className="font-serif text-5xl md:text-8xl font-normal leading-none tracking-tight text-brand-cream drop-shadow-lg drop-shadow-brand-purple">
+          <h1
+            className="font-serif text-5xl md:text-8xl font-normal leading-none tracking-tight text-brand-cream drop-shadow-lg drop-shadow-brand-purple animate-fade-in-up opacity-0"
+            style={{ animationDelay: "0.3s" }}
+          >
             Sabores del <br /> <span className="">Valle de Elqui</span>
           </h1>
           <div className="mx-auto max-w-2xl flex flex-col items-center gap-8">
-            <p className="text-pretty text-xl tracking-widest text-white/95 leading-relaxed font-medium drop-shadow-lg drop-shadow-brand-purple">
+            <p
+              className="text-pretty text-xl tracking-widest text-white/95 leading-relaxed font-medium drop-shadow-lg drop-shadow-brand-purple animate-fade-in-up opacity-0"
+              style={{ animationDelay: "0.6s" }}
+            >
               Más de 25 años elaborando mermeladas, manjares y conservas
               artesanales 100% naturales.
             </p>
             <a
               href="#productos"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-brand-purple px-10 text-sm font-bold uppercase tracking-widest text-white shadow-2xl transition-all hover:scale-105 hover:bg-brand-purple/90 focus:outline-none focus:ring-2 focus:ring-brand-purple focus:ring-offset-2"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-brand-purple px-8 text-sm font-bold uppercase tracking-widest text-white shadow-2xl transition-all hover:scale-105 hover:bg-brand-purple/90 focus:outline-none focus:ring-2 focus:ring-brand-purple focus:ring-offset-2 animate-fade-in-up opacity-0"
+              style={{ animationDelay: "0.9s" }}
             >
               Ver Productos
             </a>
