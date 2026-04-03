@@ -55,14 +55,14 @@ const Hero = () => {
       <div className="absolute inset-0 -z-20 pointer-events-none overflow-hidden">
         {/* Left Image */}
         <div
-          className="absolute left-[-25%] z-10 lg:left-[-5%] bottom-[-4%] lg:bottom-[-10%] w-[85%] lg:w-[45%]"
+          className="absolute left-[-25%] z-10 lg:left-[-19%] bottom-[-4%] lg:bottom-[-10%] w-[90%] lg:w-[60%]"
           style={{
             transform: `translateY(${scrollY * -0.055}px)`,
           }}
         >
           <div className="animate-parallax-left">
             <img
-              src="/assets/images/hero-parallax-left.webp"
+              src="/assets/images/hero-left.webp"
               alt=""
               className="w-full object-contain transition-opacity duration-300"
               // style={{
@@ -74,14 +74,14 @@ const Hero = () => {
 
         {/* Right Image */}
         <div
-          className="absolute right-[-40%] lg:right-[-10%] bottom-[-7%] lg:bottom-[-15%] w-[85%] lg:w-[45%]"
+          className="absolute right-[-40%] lg:right-[-25%] bottom-[-7%] lg:bottom-[-18%] w-[90%] lg:w-[60%]"
           style={{
             transform: `translateY(${scrollY * -0.055}px)`,
           }}
         >
           <div className="animate-parallax-right">
             <img
-              src="/assets/images/hero-parallax-right.webp"
+              src="/assets/images/hero-right.webp"
               alt=""
               className="w-full object-contain transition-opacity duration-300"
               // style={{

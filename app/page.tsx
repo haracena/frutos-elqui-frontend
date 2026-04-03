@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import OrnamentalDivider from "@/components/OrnamentalDivider";
 import Image from "next/image";
@@ -5,74 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col selection:bg-brand-purple/10 font-body">
-      {/* Header & Navigation */}
-      <header className="sticky top-0 z-50 w-full bg-brand-cream/80 backdrop-blur-sm border-b border-brand-purple/10">
-        <nav
-          className="container mx-auto flex items-center justify-between px-6 py-4"
-          aria-label="Navegación principal"
-        >
-          <div className="flex items-center gap-3">
-            <img
-              src="/assets/images/logo.webp"
-              alt="Frutos de Elqui Logo"
-              className="h-12 w-auto object-contain"
-            />
-          </div>
-          <ul className="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-[0.2em] text-foreground/80">
-            <li>
-              <a
-                href="#inicio"
-                className="hover:text-brand-purple transition-colors"
-              >
-                Inicio
-              </a>
-            </li>
-            <li>
-              <a
-                href="#nosotros"
-                className="hover:text-brand-purple transition-colors"
-              >
-                Nosotros
-              </a>
-            </li>
-            <li>
-              <a
-                href="#productos"
-                className="hover:text-brand-purple transition-colors"
-              >
-                Productos
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contacto"
-                className="hover:text-brand-purple transition-colors"
-              >
-                Contacto
-              </a>
-            </li>
-          </ul>
-          <button
-            className="md:hidden p-2 text-foreground"
-            aria-label="Abrir menú"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </button>
-        </nav>
-      </header>
+      <Header />
 
       <main>
         <Hero />
@@ -211,7 +145,7 @@ export default function Home() {
         <img
           src="/assets/images/bg-purple-lg.webp"
           alt=""
-          className="absolute w-full h-full inset-0 object-cover opacity-30"
+          className="absolute w-full h-full scale-120 inset-0 object-cover object-bottom opacity-30"
         />
         <div className="max-w-7xl mx-auto p-4 py-16 relative grid sm:grid-cols-2 lg:grid-cols-4 gap-16 border-b border-brand-cream/10 pb-20 justify-items-center">
           <div className="space-y-2">
@@ -268,6 +202,30 @@ export default function Home() {
                   contacto@frutosdeelqui.cl
                 </span>
               </li>
+              <li className="flex items-center gap-5 group">
+                <div className="w-12 h-12 rounded-full bg-brand-cream/10 flex items-center justify-center transition-colors group-hover:bg-brand-cream/20">
+                  <svg
+                    className="w-6 h-6 opacity-80"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <span className="text-lg tracking-wider">Valle de Elqui</span>
+              </li>
             </ul>
           </div>
 
@@ -316,13 +274,13 @@ export default function Home() {
               Medios de Pago
             </h4>
             <div className="grid grid-cols-3 gap-4 opacity-80">
-              <div className="h-12 bg-brand-cream/10 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
+              <div className="h-12 px-2 bg-brand-cream/10 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
                 WEBPAY
               </div>
-              <div className="h-12 bg-brand-cream/10 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
+              <div className="h-12 px-2 bg-brand-cream/10 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
                 VISA
               </div>
-              <div className="h-12 bg-brand-cream/10 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
+              <div className="h-12 px-2 bg-brand-cream/10 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
                 MC
               </div>
             </div>
