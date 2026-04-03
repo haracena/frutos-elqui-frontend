@@ -14,7 +14,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Sabores del Valle de Elqui | Mermeladas y Conservas Artesanales",
+  title: "Frutos de Elqui",
   description:
     "Más de 25 años elaborando mermeladas, manjares y conservas artesanales 100% naturales en el corazón del Valle de Elqui, Chile.",
   keywords: [
