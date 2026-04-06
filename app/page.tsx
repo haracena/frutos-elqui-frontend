@@ -1,7 +1,7 @@
+import ProductCard from "@/components/ProductCard";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import OrnamentalDivider from "@/components/OrnamentalDivider";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -99,38 +99,50 @@ export default function Home() {
               </p>
             </header>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
               {[
-                { name: "Manjares", desc: "Dulce de leche tradicional" },
-                { name: "Mermeladas", desc: "Fruta pura de estación" },
-                { name: "Conservas", desc: "Sabor preservado con amor" },
-                { name: "Jarabes y Jugos", desc: "Esencia pura del Elqui" },
-              ].map((category) => (
-                <article
-                  key={category.name}
-                  className="group flex flex-col items-center bg-brand-cream/60 rounded-md overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-brand-wine/20 border border-brand-wine/5 hover:-translate-y-2"
-                >
-                  <div className="relative aspect-5/4 w-full overflow-hidden">
-                    <Image
-                      src="/assets/images/product.webp"
-                      alt={category.name}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-brand-wine/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  </div>
-                  <div className="p-4 flex flex-col items-center gap-4">
-                    <h3 className="text-2xl font-medium text-brand-wine text-center leading-tight">
-                      {category.name}
-                    </h3>
-                    {/* <a
-                      href={`/productos/${category.name.toLowerCase()}`}
-                      className="inline-flex h-12 items-center justify-center rounded-full bg-brand-wine px-12 text-xl font-normal text-white shadow-xl transition-all hover:scale-105 hover:bg-brand-wine/90"
-                    >
-                      Ver más
-                    </a> */}
-                  </div>
-                </article>
+                {
+                  name: "Manjar de Almendra",
+                  img: "/assets/images/manjar-almendra.webp",
+                },
+                {
+                  name: "Manjar de Café",
+                  img: "/assets/images/manjar-cafe.webp",
+                },
+                {
+                  name: "Manjar de Papaya",
+                  img: "/assets/images/manjar-papaya.webp",
+                },
+                {
+                  name: "Manjar de Plátano",
+                  img: "/assets/images/manjar-platano.webp",
+                },
+                {
+                  name: "Manjar de Vainilla",
+                  img: "/assets/images/manjar-vainilla.webp",
+                },
+                {
+                  name: "Manjar Tradicional",
+                  img: "/assets/images/manjar.webp",
+                },
+                {
+                  name: "Mermelada de Durazno",
+                  img: "/assets/images/mermelada-durazno.webp",
+                },
+                {
+                  name: "Mermelada de Higo",
+                  img: "/assets/images/mermelada-higo.webp",
+                },
+                {
+                  name: "Mermelada de Tomate",
+                  img: "/assets/images/mermelada-tomate.webp",
+                },
+              ].map((product) => (
+                <ProductCard
+                  key={product.name}
+                  name={product.name}
+                  img={product.img}
+                />
               ))}
             </div>
           </div>
@@ -150,7 +162,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto p-4 py-16 relative grid sm:grid-cols-2 lg:grid-cols-4 gap-16 border-b border-brand-cream/10 pb-20 justify-items-center">
           <div className="space-y-2">
             <img
-              src="/assets/images/logo-new.webp"
+              src="/assets/images/logo-cream-new.webp"
               alt="Frutos de Elqui"
               className="sm:w-full w-[80%] max-w-[280px] mx-auto opacity-100"
             />
@@ -274,14 +286,14 @@ export default function Home() {
               Medios de Pago
             </h4>
             <div className="grid grid-cols-3 gap-4 opacity-80">
-              <div className="h-12 px-2 bg-brand-cream/10 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
-                WEBPAY
+              <div className="h-12 px-2 bg-brand-cream/90 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
+                <img src="/assets/images/webpay.png" alt="" />
               </div>
-              <div className="h-12 px-2 bg-brand-cream/10 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
-                VISA
+              <div className="h-12 px-2 bg-brand-cream/90 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
+                <img src="/assets/images/visa.png" alt="" />
               </div>
-              <div className="h-12 px-2 bg-brand-cream/10 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
-                MC
+              <div className="h-12 px-2 bg-brand-cream/90 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
+                <img src="/assets/images/mastercard.png" alt="" />
               </div>
             </div>
           </div>

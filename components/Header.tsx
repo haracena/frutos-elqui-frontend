@@ -38,7 +38,7 @@ const Header = () => {
             <img
               src="/assets/images/logo-new.webp"
               alt="Frutos de Elqui Logo"
-              className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105"
+              className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105 active:scale-95"
             />
           </a>
 
