@@ -44,7 +44,9 @@ export default function RootLayout({
       lang="es"
       className={`${playball.variable} ${lora.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body">{children}</body>
+      <body className="min-h-full flex flex-col font-body bg-brand-cream">
+        {children}
+      </body>
     </html>
   );
 }

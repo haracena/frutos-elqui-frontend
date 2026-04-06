@@ -15,11 +15,17 @@ export default function Home() {
           id="nosotros"
           className="relative py-32 px-6 overflow-hidden -mt-16"
         >
-          <img
-            src="/assets/images/bg-texture.webp"
-            alt="Textura crema"
-            className="absolute h-full w-full inset-0 -z-10 object-cover opacity-100 object-top"
-          />
+          <picture className="absolute inset-0 -z-10 pointer-events-none">
+            <source
+              media="(max-width: 767px)"
+              srcSet="/assets/images/bg-texture-vertical.webp"
+            />
+            <img
+              src="/assets/images/bg-texture.webp"
+              alt="Textura crema"
+              className="h-full w-full object-cover opacity-100 object-top"
+            />
+          </picture>
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-8 text-center">
               <header className="space-y-4">
@@ -70,13 +76,15 @@ export default function Home() {
         {/* Products Section */}
         <section
           id="productos"
-          className="relative py-32 px-6 -mt-24 lg:-mt-16"
+          className="relative py-16 sm:py-32 px-6 sm:-mt-24 lg:-mt-16"
         >
-          <img
-            src="/assets/images/bg-cream.webp"
-            alt="Fondo rústico"
-            className="absolute inset-0 h-full w-full -z-10 object-cover opacity-100 saturate-0 object-top"
-          />
+          <picture className="absolute inset-0 -z-10 pointer-events-none scale-[1]">
+            <img
+              src="/assets/images/bg-cream.webp"
+              alt="Fondo rústico"
+              className="h-full w-full object-cover saturate-0 opacity-100 object-top hidden sm:block"
+            />
+          </picture>
           <div className="container mx-auto space-y-8 sm:space-y-20">
             <header className="text-center space-y-6">
               <div className="flex justify-center items-center gap-2 lg:gap-4 overflow-hidden">
@@ -152,7 +160,7 @@ export default function Home() {
       {/* Footer */}
       <footer
         id="contacto"
-        className="bg-foreground text-brand-cream/90 relative overflow-hidden -mt-20"
+        className="bg-foreground text-brand-cream/90 relative overflow-hidden sm:-mt-20"
       >
         <img
           src="/assets/images/bg-purple-lg.webp"
