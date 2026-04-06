@@ -2,6 +2,7 @@ import ProductCard from "@/components/ProductCard";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import OrnamentalDivider from "@/components/OrnamentalDivider";
+import LocationMap from "@/components/LocationMap";
 
 export default function Home() {
   return (
@@ -155,12 +156,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <LocationMap />
       </main>
 
       {/* Footer */}
       <footer
         id="contacto"
-        className="bg-foreground text-brand-cream/90 relative overflow-hidden sm:-mt-20"
+        className="bg-foreground text-brand-cream/90 relative overflow-hidden -mt-10 sm:-mt-20"
       >
         <img
           src="/assets/images/bg-purple-lg.webp"
@@ -276,6 +278,14 @@ export default function Home() {
                   className="hover:text-brand-lavender transition-colors"
                 >
                   Productos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#ubicaciones"
+                  className="hover:text-brand-lavender transition-colors"
+                >
+                  Ubicaciones
                 </a>
               </li>
               <li>
