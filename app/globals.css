@@ -48,76 +48,11 @@
   }
 }
 
+/* Global resets and body styling */
 body {
-  background-color: var(--brand-cream);
   color: var(--foreground);
 }
 
-.text-brand {
-  color: var(--brand-purple);
-}
-
-.bg-brand {
-  background-color: var(--brand-purple);
-}
-
-@keyframes sun-drop {
-  from {
-    transform: translateY(-500px) scale(0.5);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-}
-
-.animate-sun-drop {
-  animation: sun-drop 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-@keyframes parallax-left-in {
-  from {
-    transform: translate(-150px, 150px);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes parallax-right-in {
-  from {
-    transform: translate(150px, 150px);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-.animate-parallax-left {
-  animation: parallax-left-in 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-.animate-parallax-right {
-  animation: parallax-right-in 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-@keyframes fade-in-up {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animate-fade-in-up {
-  opacity: 0;
-  animation: fade-in-up 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+::selection {
+  background-color: rgb(115 48 139 / 0.1); /* brand-purple with 10% opacity */
 }

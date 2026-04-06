@@ -8,25 +8,25 @@ interface OrnamentalDividerProps {
 
 const OrnamentalDivider: React.FC<OrnamentalDividerProps> = ({
   className = "",
-  color = "bg-brand-wine",
+  color = "bg-brand-purple",
 }) => {
   return (
     <div className={`flex items-center justify-center gap-3 py-4 ${className}`}>
       {/* Tapered Line (Left) */}
       <div
-        className={`h-[1.5px] w-full bg-linear-to-l from-brand-wine/60 to-transparent`}
+        className={`h-[1.5px] w-full bg-linear-to-l from-brand-purple/60 to-transparent`}
       ></div>
 
       {/* Central Dots */}
       <div className="flex gap-2 opacity-60 items-center">
-        <div className={`size-1 mr-1 rounded-full ${color}`}></div>
-        <div className={`size-2 rounded-full ${color}`}></div>
-        <div className={`size-1 ml-1 rounded-full ${color}`}></div>
+        <div className={`size-1 mr-1 rounded-full bg-brand-purple`}></div>
+        <div className={`size-2 rounded-full bg-brand-purple`}></div>
+        <div className={`size-1 ml-1 rounded-full bg-brand-purple`}></div>
       </div>
 
       {/* Tapered Line (Right) */}
       <div
-        className={`h-[1.5px] w-full bg-linear-to-r from-brand-wine/60 to-transparent`}
+        className={`h-[1.5px] w-full bg-linear-to-r from-brand-purple/60 to-transparent`}
       ></div>
     </div>
   );

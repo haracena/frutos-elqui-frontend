@@ -93,7 +93,7 @@ export default function Home() {
                   alt=""
                   className="opacity-40 w-32"
                 />
-                <h2 className="font-serif text-4xl md:text-7xl font-normal tracking-tight text-brand-wine">
+                <h2 className="font-serif text-4xl md:text-7xl font-normal tracking-tight text-brand-purple">
                   Nuestros Productos
                 </h2>
                 <img
@@ -102,7 +102,7 @@ export default function Home() {
                   className="opacity-40 w-32 rotate-180"
                 />
               </div>
-              <p className="font-serif italic text-2xl md:text-3xl text-brand-purple/70">
+              <p className="font-serif italic text-2xl md:text-3xl text-brand-purple/75">
                 Auténticos Sabores Artesanales
               </p>
             </header>
@@ -172,10 +172,10 @@ export default function Home() {
             <img
               src="/assets/images/logo-cream-new.webp"
               alt="Frutos de Elqui"
-              className="sm:w-full w-[80%] max-w-[280px] mx-auto opacity-100"
+              className="sm:w-full w-[80%] max-w-[280px] mx-auto opacity-100 pointer-events-none"
             />
-            <p className="text-base text-center mx-auto italic opacity-80 leading-relaxed max-w-xs">
-              Sabores auténticos del Valle de Elqui
+            <p className="text-base text-center text-brand-cream mx-auto italic opacity-80 leading-relaxed max-w-xs">
+              Sabores auténticos del <br /> Valle de Elqui
             </p>
           </div>
 
@@ -250,7 +250,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-serif text-2xl font-normal tracking-wide text-brand-cream">
+            <h4 className="font-serif text-center sm:text-start text-2xl font-normal tracking-wide text-brand-cream">
               Secciones
             </h4>
             <ul className="grid pl-1 grid-cols-2 lg:grid-cols-1 gap-6 text-xs font-bold uppercase tracking-[0.3em] opacity-80">
@@ -290,7 +290,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-serif text-2xl font-normal tracking-wide text-brand-cream">
+            <h4 className="font-serif text-center sm:text-start text-2xl font-normal tracking-wide text-brand-cream">
               Medios de Pago
             </h4>
             <div className="grid grid-cols-3 gap-4 opacity-80">

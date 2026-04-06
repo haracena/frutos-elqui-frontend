@@ -10,7 +10,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ name, img }) => {
   return (
-    <article className="group flex flex-col items-center bg-brand-cream/80 rounded-xl overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-brand-wine/10 border border-brand-wine/10 hover:border-brand-wine/20 hover:-translate-y-2">
+    <article className="group flex flex-col items-center bg-neutral-50 rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-brand-wine/10 hover:-translate-y-2">
       <div className="relative aspect-square w-full overflow-hidden">
         <img
           src={img}

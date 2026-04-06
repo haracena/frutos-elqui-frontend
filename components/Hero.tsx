@@ -95,7 +95,7 @@ const Hero = () => {
       <div className="container mx-auto relative z-10 flex flex-col items-center gap-8">
         <div className="max-w-4xl space-y-6">
           <h1
-            className="font-serif text-5xl md:text-8xl font-normal leading-none tracking-tight text-brand-cream drop-shadow-lg drop-shadow-brand-purple animate-fade-in-up opacity-0"
+            className="font-serif text-5xl md:text-8xl font-normal leading-none tracking-tight text-white drop-shadow-lg drop-shadow-brand-purple animate-fade-in-up opacity-0"
             style={{ animationDelay: "0.3s" }}
           >
             Sabores del <br /> <span className="">Valle de Elqui</span>

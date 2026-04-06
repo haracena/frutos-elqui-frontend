@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full bg-brand-cream/90 backdrop-blur-md border-b border-brand-purple/10 transition-all duration-300">
+      <header className="sticky top-0 z-50 w-full bg-[#f8efe2]/70 backdrop-blur-md border-b border-brand-purple/10 transition-all duration-300">
         <nav
           className="container mx-auto flex items-center justify-between px-6 py-4"
           aria-label="Navegación principal"
@@ -99,7 +99,7 @@ const Header = () => {
 
         {/* Menu Content */}
         <div
-          className={`absolute right-0 top-0 h-full w-[80%] max-w-sm bg-brand-cream shadow-2xl flex flex-col pt-24 px-10 transition-transform duration-500 ease-in-out ${
+          className={`absolute right-0 top-0 h-full w-[80%] max-w-sm bg-[#f8efe2]/90 shadow-2xl flex flex-col pt-24 px-10 transition-transform duration-500 ease-in-out ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
