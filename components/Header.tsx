@@ -36,7 +36,7 @@ const Header = () => {
         >
           <a href="#inicio" className="flex items-center gap-3 group">
             <img
-              src="/assets/images/logo.webp"
+              src="/assets/images/logo-new.webp"
               alt="Frutos de Elqui Logo"
               className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105"
             />
@@ -105,7 +105,7 @@ const Header = () => {
         >
           <div className="absolute top-10 left-10 opacity-20">
             <img
-              src="/assets/images/logo.webp"
+              src="/assets/images/logo-new.webp"
               alt=""
               className="h-8 grayscale"
             />
@@ -135,9 +135,9 @@ const Header = () => {
 
           <div className="mt-auto mb-10 space-y-4">
             <img
-              src="/assets/images/logo.webp"
+              src="/assets/images/logo-new.webp"
               alt=""
-              className="mx-auto w-[80%] opacity-55"
+              className="mx-auto w-[80%] opacity-80"
             />
             <p className="text-xs text-center uppercase tracking-widest text-brand-purple/60 font-bold">
               Sabores del Valle de Elqui
