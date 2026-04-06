@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f9f5f0; /* Cream/Beige */
-  --foreground: #2d0a1b; /* Dark Purple */
-  --brand-purple: #5b1a3d;
-  --brand-wine: #572534;
-  --brand-cream: #f9f5f0;
+  --background: #F5E9D8; /* Crema base */
+  --foreground: #2E0F2F; /* Oscuro / Contraste */
+  --brand-purple: #73308B; /* Morado marca / Acción */
+  --brand-wine: #8C3A3A; /* Burdeo producto */
+  --brand-cream: #F5E9D8; /* Crema base */
+  --brand-lavender: #D6C1E5; /* Lila suave (Pantone 526) */
+  --brand-beige: #D8CFBC; /* Beige */
 }
 
 @theme inline {
@@ -14,6 +16,8 @@
   --color-brand-purple: var(--brand-purple);
   --color-brand-wine: var(--brand-wine);
   --color-brand-cream: var(--brand-cream);
+  --color-brand-lavender: var(--brand-lavender);
+  --color-brand-beige: var(--brand-beige);
   --font-serif: var(--font-playball);
   --font-body: var(--font-lora);
 

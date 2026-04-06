@@ -13,10 +13,10 @@ export default function Home() {
 
         <section
           id="nosotros"
-          className="relative py-32 px-6 overflow-hidden -mt-10"
+          className="relative py-32 px-6 overflow-hidden -mt-16"
         >
           <img
-            src="/assets/images/bg-cream.webp"
+            src="/assets/images/bg-texture.webp"
             alt="Textura crema"
             className="absolute h-full w-full inset-0 -z-10 object-cover opacity-100 object-top"
           />
@@ -33,7 +33,7 @@ export default function Home() {
                     Nuestra Esencia
                   </span>
                 </div> */}
-                <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-brand-wine text-pretty">
+                <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-brand-purple text-pretty">
                   Tradición Familiar y Sabor Artesanal
                 </h2>
                 <OrnamentalDivider color="bg-brand-wine" />
@@ -99,7 +99,7 @@ export default function Home() {
               </p>
             </header>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div className="grid sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
               {[
                 {
                   name: "Manjar de Almendra",
@@ -121,10 +121,10 @@ export default function Home() {
                   name: "Manjar de Vainilla",
                   img: "/assets/images/manjar-vainilla.webp",
                 },
-                {
-                  name: "Manjar Tradicional",
-                  img: "/assets/images/manjar.webp",
-                },
+                // {
+                //   name: "Manjar Tradicional",
+                //   img: "/assets/images/manjar.webp",
+                // },
                 {
                   name: "Mermelada de Durazno",
                   img: "/assets/images/mermelada-durazno.webp",
@@ -152,7 +152,7 @@ export default function Home() {
       {/* Footer */}
       <footer
         id="contacto"
-        className="bg-brand-wine text-brand-cream/90 relative overflow-hidden -mt-20"
+        className="bg-foreground text-brand-cream/90 relative overflow-hidden -mt-20"
       >
         <img
           src="/assets/images/bg-purple-lg.webp"
@@ -172,12 +172,12 @@ export default function Home() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-serif sm:text-start text-center text-2xl font-normal tracking-wide">
+            <h4 className="font-serif sm:text-start text-center text-2xl font-normal tracking-wide text-brand-cream">
               Contáctanos
             </h4>
             <ul className="space-y-4 text-sm font-medium">
-              <li className="flex items-center gap-5 group">
-                <div className="w-12 h-12 rounded-full bg-brand-cream/10 flex items-center justify-center transition-colors group-hover:bg-brand-cream/20">
+              <li className="flex items-center gap-2 group">
+                <div className="w-12 h-12 rounded-full bg-brand-lavender/10 flex items-center justify-center transition-colors group-hover:bg-brand-lavender/20">
                   <svg
                     className="w-6 h-6 opacity-80"
                     fill="none"
@@ -194,8 +194,8 @@ export default function Home() {
                 </div>
                 <span className="text-lg tracking-wider">+56 9 8821 0841</span>
               </li>
-              <li className="flex items-center gap-5 group">
-                <div className="w-12 h-12 rounded-full bg-brand-cream/10 flex items-center justify-center transition-colors group-hover:bg-brand-cream/20">
+              <li className="flex items-center gap-2 group">
+                <div className="w-12 h-12 rounded-full bg-brand-lavender/10 flex items-center justify-center transition-colors group-hover:bg-brand-lavender/20">
                   <svg
                     className="w-6 h-6 opacity-80"
                     fill="none"
@@ -214,8 +214,8 @@ export default function Home() {
                   contacto@frutosdeelqui.cl
                 </span>
               </li>
-              <li className="flex items-center gap-5 group">
-                <div className="w-12 h-12 rounded-full bg-brand-cream/10 flex items-center justify-center transition-colors group-hover:bg-brand-cream/20">
+              <li className="flex items-center gap-2 group">
+                <div className="w-12 h-12 rounded-full bg-brand-lavender/10 flex items-center justify-center transition-colors group-hover:bg-brand-lavender/20">
                   <svg
                     className="w-6 h-6 opacity-80"
                     fill="none"
@@ -242,14 +242,14 @@ export default function Home() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-serif text-2xl font-normal tracking-wide">
+            <h4 className="font-serif text-2xl font-normal tracking-wide text-brand-cream">
               Secciones
             </h4>
             <ul className="grid pl-1 grid-cols-2 lg:grid-cols-1 gap-6 text-xs font-bold uppercase tracking-[0.3em] opacity-80">
               <li>
                 <a
                   href="#inicio"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-brand-lavender transition-colors"
                 >
                   Inicio
                 </a>
@@ -257,7 +257,7 @@ export default function Home() {
               <li>
                 <a
                   href="#nosotros"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-brand-lavender transition-colors"
                 >
                   Nosotros
                 </a>
@@ -265,7 +265,7 @@ export default function Home() {
               <li>
                 <a
                   href="#productos"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-brand-lavender transition-colors"
                 >
                   Productos
                 </a>
@@ -273,7 +273,7 @@ export default function Home() {
               <li>
                 <a
                   href="#contacto"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-brand-lavender transition-colors"
                 >
                   Contacto
                 </a>
@@ -282,17 +282,17 @@ export default function Home() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-serif text-2xl font-normal tracking-wide">
+            <h4 className="font-serif text-2xl font-normal tracking-wide text-brand-cream">
               Medios de Pago
             </h4>
             <div className="grid grid-cols-3 gap-4 opacity-80">
-              <div className="h-12 px-2 bg-brand-cream/90 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
+              <div className="h-12 px-2 bg-white/90 rounded-xl border border-white/5 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-white/80 transition-colors">
                 <img src="/assets/images/webpay.png" alt="" />
               </div>
-              <div className="h-12 px-2 bg-brand-cream/90 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
+              <div className="h-12 px-2 bg-white/90 rounded-xl border border-white/5 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-white/80 transition-colors">
                 <img src="/assets/images/visa.png" alt="" />
               </div>
-              <div className="h-12 px-2 bg-brand-cream/90 rounded-xl border border-brand-cream/10 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-brand-cream/20 transition-colors">
+              <div className="h-12 px-2 bg-white/90 rounded-xl border border-white/5 flex items-center justify-center text-[10px] font-bold tracking-widest hover:bg-white/80 transition-colors">
                 <img src="/assets/images/mastercard.png" alt="" />
               </div>
             </div>

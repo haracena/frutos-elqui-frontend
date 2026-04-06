@@ -23,7 +23,7 @@ const Hero = () => {
       <img
         src="/assets/images/bg-hero-parallax.webp"
         alt="Valle de Elqui"
-        className="absolute inset-0 -z-30 object-cover brightness-[0.85] w-full h-full"
+        className="absolute inset-0 -z-30 object-cover w-full h-full"
         style={{
           transform: `translateY(${scrollY * 0.2}px)`,
         }}
@@ -39,7 +39,7 @@ const Hero = () => {
         {/* El Sol (Maneja la animación de entrada "Sun Drop") */}
         <div className="relative animate-sun-drop">
           <div
-            className="size-44 rounded-full bg-[radial-gradient(circle,_#fff7ed_0%,_#fbbf24_30%,_#f59e0b_60%,_transparent_100%)] blur-2xl opacity-95 mix-blend-screen"
+            className="size-44 rounded-full bg-[radial-gradient(circle,_#fff7ed_0%,_#fbbf24_30%,_#f59e0b_60%,_transparent_100%)] blur-2xl opacity-95 mix-blend-screen brightness-125"
             style={{
               boxShadow:
                 "0 0 160px rgba(251, 191, 36, 0.9), 0 0 300px rgba(245, 158, 11, 0.7), 0 0 500px rgba(244, 63, 94, 0.2)",
@@ -55,7 +55,7 @@ const Hero = () => {
       <div className="absolute inset-0 -z-20 pointer-events-none overflow-hidden">
         {/* Left Image */}
         <div
-          className="absolute left-[-25%] z-10 lg:left-[-19%] bottom-[-4%] lg:bottom-[-10%] w-[90%] lg:w-[60%]"
+          className="absolute left-[-40%] z-10 lg:left-[-19%] bottom-[0%] lg:bottom-[-10%] w-[108%] lg:w-[60%]"
           style={{
             transform: `translateY(${scrollY * -0.055}px)`,
           }}
@@ -74,7 +74,7 @@ const Hero = () => {
 
         {/* Right Image */}
         <div
-          className="absolute right-[-40%] lg:right-[-25%] bottom-[-7%] lg:bottom-[-18%] w-[90%] lg:w-[60%]"
+          className="absolute right-[-55%] lg:right-[-25%] bottom-[-3%] lg:bottom-[-18%] w-[108%] lg:w-[60%]"
           style={{
             transform: `translateY(${scrollY * -0.055}px)`,
           }}
@@ -110,7 +110,7 @@ const Hero = () => {
             </p>
             <a
               href="#productos"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-brand-purple px-8 text-sm font-bold uppercase tracking-widest text-white shadow-2xl transition-all hover:scale-105 hover:bg-brand-purple/90 focus:outline-none focus:ring-2 focus:ring-brand-purple focus:ring-offset-2 animate-fade-in-up opacity-0"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-brand-purple px-8 text-sm font-bold uppercase tracking-widest text-white shadow-2xl transition-all hover:scale-105 hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-brand-purple focus:ring-offset-2 animate-fade-in-up opacity-0"
               style={{ animationDelay: "0.9s" }}
             >
               Ver Productos

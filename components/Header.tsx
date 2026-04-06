@@ -124,11 +124,11 @@ const Header = () => {
                 <a
                   href={link.href}
                   onClick={toggleMenu}
-                  className="text-3xl font-serif text-brand-wine hover:text-brand-purple transition-colors block"
+                  className="text-3xl font-serif text-brand-purple hover:text-brand-purple transition-colors block"
                 >
                   {link.name}
                 </a>
-                <div className="w-8 h-[3px] bg-brand-purple/20 mt-2 rounded-full" />
+                <div className="w-8 h-[3px] bg-brand-purple/30 mt-2 rounded-full" />
               </li>
             ))}
           </ul>
@@ -139,7 +139,7 @@ const Header = () => {
               alt=""
               className="mx-auto w-[80%] opacity-80"
             />
-            <p className="text-xs text-center uppercase tracking-widest text-brand-purple/60 font-bold">
+            <p className="text-xs text-center uppercase tracking-widest text-brand-purple font-bold opacity-60">
               Sabores del Valle de Elqui
             </p>
           </div>
