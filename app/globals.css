@@ -1,6 +1,17 @@
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 16px; /* Adjust based on header height */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 :root {
   --background: #F5E9D8; /* Crema base */
   --foreground: #2E0F2F; /* Oscuro / Contraste */

@@ -75,7 +75,10 @@ export default function LocationMap() {
     );
 
   return (
-    <section id="ubicaciones" className="pt-24 pb-32 px-6 relative -mt-20">
+    <section
+      id="ubicaciones"
+      className="pt-16 md:pt-24 pb-32 px-6 relative -mt-14 sm:-mt-20"
+    >
       <picture className="absolute inset-0 -z-10 pointer-events-none saturate-50">
         <source
           media="(max-width: 767px)"

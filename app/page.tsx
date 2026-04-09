@@ -79,11 +79,11 @@ export default function Home() {
           id="productos"
           className="relative py-16 sm:py-32 px-6 sm:-mt-24 lg:-mt-16"
         >
-          <picture className="absolute inset-0 -z-10 pointer-events-none scale-[1]">
+          <picture className="absolute inset-0 -z-10 pointer-events-none">
             <img
               src="/assets/images/bg-cream.webp"
               alt="Fondo rústico"
-              className="h-full w-full object-cover saturate-0 opacity-100 object-top hidden sm:block"
+              className="h-full w-full object-cover saturate-0 opacity-100 object-top-left sm:object-top hidden md:block"
             />
           </picture>
           <div className="container mx-auto space-y-8 sm:space-y-20">
@@ -157,19 +157,47 @@ export default function Home() {
           </div>
         </section>
         <LocationMap />
+        <section className="relative py-12 md:py-24 -mt-12 sm:-mt-20">
+          <picture className="absolute inset-0 -z-10 pointer-events-none scale-[1]">
+            <source
+              media="(max-width: 767px)"
+              srcSet="/assets/images/bg-cream-vertical.webp"
+            />
+            <img
+              src="/assets/images/bg-cream.webp"
+              alt="Fondo rústico"
+              className="h-full w-full object-cover saturate-0 opacity-100 object-top"
+            />
+          </picture>
+          <div className="flex items-center justify-center gap-4 md:gap-8 px-4 translate-y-2 lg:translate-y-4">
+            <img
+              className="size-24 object-contain"
+              src="/assets/images/regalo.webp"
+              alt="regalo"
+            />
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-pretty mb-2 leading-tight text-brand-purple">
+              Realizamos envíos a todo Chile
+            </h3>
+            <img
+              className="size-24 object-contain hidden md:block"
+              src="/assets/images/regalo.webp"
+              alt="regalo"
+            />
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
       <footer
         id="contacto"
-        className="bg-foreground text-brand-cream/90 relative overflow-hidden -mt-10 sm:-mt-20"
+        className="bg-foreground text-brand-cream/90 relative overflow-hidden"
       >
         <img
           src="/assets/images/bg-purple-lg.webp"
           alt=""
           className="absolute w-full h-full scale-120 inset-0 object-cover object-bottom opacity-30"
         />
-        <div className="max-w-7xl mx-auto p-4 py-16 relative grid sm:grid-cols-2 lg:grid-cols-4 gap-16 border-b border-brand-cream/10 pb-20 justify-items-center">
+        <div className="max-w-7xl mx-auto p-4 py-16 relative grid sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-16 border-b border-brand-cream/10 justify-items-center">
           <div className="space-y-2">
             <img
               src="/assets/images/logo-cream-new.webp"
